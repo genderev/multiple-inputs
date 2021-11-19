@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>hey 👥</title>
+</head>
+<body>
+<textarea id="any-element">
+Make sure to test out this demo by starting a local server 💻
+</textarea>
+
+<script src="mid.min.js"></script>
+<script>
+
+let element = document.getElementById('any-element')
+console.log("hi")
+
+multipleInputs(element);
+
+
+console.log(window)
+
+element.addEventListener('tap', function (e) {
+
+element.value = `offsetLeft is ${e.target.offsetLeft}.`
+
+console.log(e)
+
+});
+
+
+element.addEventListener('key', function (e) {
+
+element.value = e.detail
+
+});
+
+</script>
+</body>
+</html>
